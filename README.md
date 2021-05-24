@@ -1,8 +1,8 @@
-# The Predictive Power of Investor Sentiment to Copper Futures Volatility in China -- Based on DMA-HAR-CJ Model
+# The Predictive Power of Investor Sentiment to Copper Futures Volatility in China -- Based on DMA-HAR-CJ Model（dynamic model average)
 
-This article builds a news database by crawling the historical news of China Financial News Network from 2007 to the present, and uses the Bertmodel to extract news sentiment as a proxy variable for investor sentiment, and uses the N-gram model to calculate news crossentropy as a market unusualness. Taking into account the uncertainty of the impact of investor sentiment on the volatility of China's copper futures market and the jumping phenomenon of the copper futures market, this article uses the DMA-HAR-CJ model as the benchmark model for volatility prediction. By incorporating investor sentiment variables into the benchmark model, Constructed the sentiment model DMA-HAR-CJ-Sen to study, the in-sample and out-of-sample prediction ability of investor sentimen, especially abnormal investor sentiment on the realized volatility of China's copper futures market.  
+This paper builds a news database by crawling the historical news of China Financial News Network from 2007 to the present, and uses the Bertmodel to extract news sentiment as a proxy variable for investor sentiment, and uses the N-gram model to calculate news crossentropy as a market unusualness. Taking into account the uncertainty of the impact of investor sentiment on the volatility of China's copper futures market and the jumping phenomenon of the copper futures market, this paper uses the DMA-HAR-CJ model as the benchmark model for volatility prediction. By incorporating investor sentiment variables into the benchmark model, Constructed the sentiment model DMA-HAR-CJ-Sen to study, the in-sample and out-of-sample prediction ability of investor sentimen, especially abnormal investor sentiment on the realized volatility of China's copper futures market. 
 
-the main module contains four parts:
+The main module contains four parts:
 ## The first part: Crawing News from websites
 ### Structure
 - crawler folder contains main script for crawling from [中国金融界](http://www.jrj.com.cn),[中国证券网](https://www.cnstock.com) and [每经网](http://www.nbd.com.cn). The script
@@ -57,6 +57,7 @@ Run a model ->1. train model  Training with default parameters can be performed 
 - 2.other deep network model can be added in model.py not only Bert class models.
 
 ## The three part: N-grams for calculate News crossentropy as a proxy of market unusualness
+the part is sorting out···
 
 ## The four part: DMA-HAR-CJ-Sent for volatility modeling
-
+The scripts for dynamic model average method  and continuous, jump component of volatility are written by R.
