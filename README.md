@@ -39,4 +39,7 @@ Run a model ->1. train model  Training with default parameters can be performed 
                     --gradient_accumulation_steps 4 --warmup_steps 0
                     --eval_batch_size 8 --learning_rate 1e-5 --adam_epsilon 1e-6
                     --weight_decay, 0 --train_steps 30000 --freeze 0`
-## 
+## other 
+- 1.one can add some trick to import prediction performance. For example model average,Pseudo label,model stacking. Details can be seen[BDCI top1 scheme](https://github.com/cxy229/BDCI2019-SENTIMENT-CLASSIFICATION).
+- 2.other deep network model can be added in model.py not only Bert class models.
+
