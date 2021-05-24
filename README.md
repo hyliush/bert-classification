@@ -7,7 +7,7 @@ The main module contains four parts:
 ### Structure
 - crawler folder contains main script for crawling from [中国金融界](http://www.jrj.com.cn),[中国证券网](https://www.cnstock.com) and [每经网](http://www.nbd.com.cn). The script
 is revised based on [DemonDamon](https://github.com/DemonDamon/Listed-company-news-crawl-and-text-analysis). And especially, we add a script for crawling eastmoney forum.
-- ProxyPool folder for crawling proxy. More details can been seen []. 
+- ProxyPool folder for crawling proxy. More details can been seen [ProxyPool](https://github.com/Python3WebSpider/ProxyPool). 
 - config,database,dedupication,denull,tokenzition,and utils are used to do some data processing.
 
 
@@ -58,6 +58,7 @@ Run a model ->1. train model  Training with default parameters can be performed 
 
 ## The three part: N-grams for calculate News crossentropy as a proxy of market unusualness
 the part is sorting out···
+more details about n-gram model can been seen [svecon](https://github.com/svecon/NLP-language-modelling).
 
 ## The four part: DMA-HAR-CJ-Sent for volatility modeling
 The scripts for dynamic model average method  and continuous, jump component of volatility are written by R.
